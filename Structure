@@ -1,0 +1,63 @@
+XalyrNet/
+├── contracts/                     # Smart contracts for the blockchain layer
+│   ├── AIModelNFT.sol             # Contract for tokenizing AI models as NFTs
+│   ├── XLYRToken.sol              # ERC-20 token contract for XLYR
+│   ├── ComputeRewards.sol         # Rewards distribution contract for contributors
+│   ├── Governance.sol             # Governance mechanism for voting
+│   ├── interfaces/                # Interfaces for modular contract interaction
+│   └── migrations/                # Deployment configurations
+├── frontend/                      # Frontend application (React.js)
+│   ├── public/                    # Static assets
+│   ├── src/
+│   │   ├── components/            # Reusable UI components
+│   │   │   ├── Header.js          # Navigation bar
+│   │   │   ├── Footer.js          # Footer for the app
+│   │   │   └── MarketplaceCard.js # Card to display AI model details
+│   │   ├── pages/                 # Core application pages
+│   │   │   ├── Home.js            # Homepage
+│   │   │   ├── Marketplace.js     # AI model marketplace page
+│   │   │   ├── Dashboard.js       # User dashboard
+│   │   │   └── Governance.js      # Governance voting page
+│   │   ├── styles/                # CSS or styled-components for UI
+│   │   ├── api/                   # API integrations
+│   │   ├── App.js                 # Main React application file
+│   │   └── index.js               # Entry point
+│   └── package.json               # Dependencies and scripts
+├── backend/                       # Backend server (Node.js/Express)
+│   ├── api/                       # RESTful API endpoints
+│   │   ├── models/                # Database models (MongoDB schemas)
+│   │   │   ├── Model.js           # Schema for AI models
+│   │   │   ├── User.js            # Schema for users
+│   │   └── routes/                # API route handlers
+│   │       ├── models.js          # Endpoints for AI model management
+│   │       ├── users.js           # Endpoints for user management
+│   │       └── rewards.js         # Endpoints for reward distribution
+│   ├── config/                    # Configuration files
+│   │   ├── db.js                  # Database connection setup
+│   │   └── environment.js         # Environment variables
+│   ├── services/                  # Business logic for APIs
+│   ├── utils/                     # Utility functions
+│   ├── server.js                  # Entry point for the backend server
+│   └── package.json               # Dependencies and scripts
+├── scripts/                       # Deployment and utility scripts
+│   ├── deployContracts.js         # Script to deploy smart contracts
+│   ├── mintNFT.js                 # Script for minting AI model NFTs
+│   ├── distributeRewards.js       # Script for distributing contributor rewards
+│   └── setupGovernance.js         # Script for initializing governance contract
+├── test/                          # Test files for all layers
+│   ├── contracts/                 # Smart contract tests (Mocha/Chai)
+│   │   └── XLYRToken.test.js      # Test cases for ERC-20 token
+│   ├── backend/                   # Backend tests
+│   └── frontend/                  # Frontend tests
+├── docs/                          # Documentation
+│   ├── whitepaper.md              # Full whitepaper
+│   ├── technical_overview.md      # Technical specifications
+│   ├── api_docs.md                # API documentation
+│   ├── governance_rules.md        # Governance mechanism description
+│   └── README.md                  # Repository overview
+├── README.md                      # Main repository README
+├── LICENSE                        # Licensing information
+├── hardhat.config.js              # Hardhat configuration for smart contracts
+├── truffle-config.js              # Truffle configuration (optional)
+├── .env                           # Environment variables for sensitive info
+└── .gitignore                     # Files and folders to ignore
