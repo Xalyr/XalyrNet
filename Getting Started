@@ -1,0 +1,22 @@
+1. Clone the Repository:
+
+git clone https://github.com/your-username/XalyrNet.git
+cd XalyrNet
+
+
+2. Install Dependencies:
+
+Backend:
+
+cd backend
+npm install
+
+Frontend:
+
+cd frontend
+npm install
+
+Contracts:
+
+cd contracts
+npm install
