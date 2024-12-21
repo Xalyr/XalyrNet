@@ -1,0 +1,30 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+const Marketplace = () => {
+    const [models, setModels] = useState([]);
+
+    useEffect(() => {
+        axios.get("/api/models")
+            .then((response) => setModels(response.data))
+            .catch((error) => console.error(error));
+    }, []);
+
+    return (
+        <div>
+            <h1>AI Model Marketplace</h1>
+            <div>
+                {models.map((model) => (
+                    <div key={model.id} className="marketplace-card">
+                        <h2>{model.name}</h2>
+                        <p>{model.description}</p>
+                        <button>Purchase for {model.price} XLYR</button>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default Marketplace;
+
